@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  library:
+    build: ./
+    image: library
+    container_name: library
+    ports:
+      - 8081:8081
+    environment:
+      HOST: postgres
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_DB: library
+      POSTGRESS_PASSWORD: root
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

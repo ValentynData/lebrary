@@ -1,0 +1,34 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob.non_contextual_creation: true
+    generate-ddl: false
+    show-sql: true
+  datasource:
+    hikari:
+      maximum-pool-size: 8
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${HOST:localhost}:5432/library
+
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.app.crud.books: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /home/valentyn/book/application.log
+
+jwt:
+  secret: "app"
+  tokenValidHours: 10

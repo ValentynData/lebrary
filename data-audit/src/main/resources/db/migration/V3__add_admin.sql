@@ -1,0 +1,1 @@
+insert into users (created_time, updated_time, name, username, email, password, roles) VALUES (NOW(), NOW(), 'admin', 'admin', 'admin@gmail.com', '$2a$10$hbxecwitQQ.dDT4JOFzQAulNySFwEpaFLw38jda6Td.Y/cOiRzDFu', 'ROLE_ADMIN')

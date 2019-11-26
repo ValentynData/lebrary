@@ -1,0 +1,8 @@
+${AnsiColor.GREEN}                   ,--.    ,--. ,-----.   ,------.    ,---.   ,------.  ,--.   ,--.
+${AnsiColor.RED}                   |  |    |  | |  |) /_  |  .--. '  /  O  \  |  .--. '  \  `.'  /
+${AnsiColor.GREEN}                   |  |    |  | |  .-.  \ |  '--'.' |  .-.  | |  '--'.'   '.    /
+${AnsiColor.GREEN}                   |  '--. |  | |  '--' / |  |\  \  |  | |  | |  |\  \      |  |
+${AnsiColor.GREEN}                   `-----' `--' `------'  `--' '--' `--' `--' `--' '--'     `--'  ${application.version}
+
+${AnsiColor.WHITE}
+
